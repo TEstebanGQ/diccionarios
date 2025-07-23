@@ -1,13 +1,8 @@
-import ui.students as st
-import datamodels.modelsdata as models
-import ui.mainmenu as mainmenu
-
-import ui.skills as skills
-import os
+from ui import mainmenu
 
 if __name__ == "__main__":
-        mainmenu.main_menu()
- 
+    mainmenu.main_menu()
+    
                 
     # st.add_student()
     # # print(models.campus)
