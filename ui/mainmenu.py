@@ -4,8 +4,8 @@ from ui import students
 from ui import skills
 
 opcionesMenu = [
-    'Administrar rutas',
     'Administrar Campers',
+    'Administrar Rutas',
     'Gestión de Skills',
     'Salir'
 ]
@@ -13,7 +13,7 @@ opcionesMenu = [
 def main_menu():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
-        print("=== MENÚ PRINCIPAL ===\n")
+        print("=== MENÚ PRINCIPAL ===")
         for i, opcion in enumerate(opcionesMenu, start=1):
             print(f"{i}. {opcion}")
         
@@ -31,9 +31,9 @@ def main_menu():
 
         match op:
             case 0:
-                rutas.main_menu_rutas()
-            case 1:
                 students.main_menu_campers()
+            case 1:
+                rutas.main_menu_rutas()           
             case 2:
                 skills.main_menu_skills()
             case 3:
